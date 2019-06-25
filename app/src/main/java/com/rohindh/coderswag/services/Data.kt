@@ -4,7 +4,7 @@ import com.rohindh.coderswag.model.Category
 import com.rohindh.coderswag.model.Product
 
 object Data {
-    val category = listOf(
+    val categories = listOf(
         Category("SHIRTS","shirtimage"),
         Category("HOODIES","hoodieimage"),
         Category("HATS","hatimage"),
