@@ -6,7 +6,7 @@
 
     <ImageView
             android:layout_width="0dp"
-            android:layout_height="150dp" tools:srcCompat="@drawable/hatimage"
+            android:layout_height="100dp" tools:srcCompat="@drawable/hatimage"
             android:id="@+id/categoryImage"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
