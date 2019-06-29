@@ -31,5 +31,13 @@ object Data {
         Product("King maker light white hoodies","850 Rs","hoodies03"),
         Product("King maker dark brown hoodies","1550 Rs","hoodies04")
         )
-
+    val digital = listOf<Product>()
+    fun CategoryType (category: String): List<Product>{
+        return when (category){
+            "SHIRTS" -> shirts
+            "HATS" -> hats
+            "HOODIES" -> hoodies
+            else -> digital
+        }
+    }
 }
