@@ -8,7 +8,7 @@ object Data {
         Category("SHIRTS","shirtimage"),
         Category("HOODIES","hoodieimage"),
         Category("HATS","hatimage"),
-        Category("DIGITAL","digitalgoodsimage")
+        Category("DIGITAL","digitalgoodsimage") 
     )
 
     val hats = listOf(
@@ -31,4 +31,5 @@ object Data {
         Product("King maker light white hoodies","850 Rs","hoodies03"),
         Product("King maker dark brown hoodies","1550 Rs","hoodies04")
         )
+
 }
