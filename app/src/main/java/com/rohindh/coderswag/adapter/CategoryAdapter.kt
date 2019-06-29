@@ -1,6 +1,5 @@
 package com.rohindh.coderswag.adapter
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -10,15 +9,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.rohindh.coderswag.R
 import com.rohindh.coderswag.model.Category
-//import com.rohindh.coderswag.services.Data.category
-import org.w3c.dom.Text
 
-//@Suppress("UNREACHABLE_CODE")
 class CategoryAdapter(context : Context, categories: List<Category>): BaseAdapter() {
     val categories = categories
     val context = context
 
-//    @SuppressLint("ViewHolder")
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val categoryview :View
         val holder : viewHolder
