@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.rohindh.coderswag.R
 import com.rohindh.coderswag.model.Category
 
-class RecyclerAdapter(val context: Context, val categories  : List<Category>): RecyclerView.Adapter<RecyclerAdapter.Holder>() {
+class RecyclerAdapter(val context: Context, val categories  : List<Category>,val itemClicked : (Category) -> Unit): RecyclerView.Adapter<RecyclerAdapter.Holder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         val view = LayoutInflater.from(context).inflate(R.layout.category_view_layout,parent,false)
         return Holder(view)
@@ -32,6 +32,7 @@ class RecyclerAdapter(val context: Context, val categories  : List<Category>): R
              val resourceId = context.resources.getIdentifier(category.image,"drawable",context.packageName)
              categoryImage.setImageResource(resourceId)
              categoryName.text = category.title
+             itemView.setOnClickListener { itemClicked(category)}
          }
     }
 }
